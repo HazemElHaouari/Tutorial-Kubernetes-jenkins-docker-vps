@@ -6,4 +6,4 @@ RUN npm install
 RUN npm run build --prod
 
 FROM nginx:latest
-COPY --from=node /app/dist/testkube /usr/share/nginx/html
+COPY --from=node /app/dist/angularApp /usr/share/nginx/html
