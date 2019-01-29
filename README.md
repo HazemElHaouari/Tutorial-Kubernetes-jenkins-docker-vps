@@ -1,4 +1,4 @@
-![Tutorial CI/CD](https://github.com/HazemElHaouari/Tutorial-Kubernetes-jenkins-docker-vps/tree/master/ressources/1280px-Kubernetes_logo.svg.png )
+![Tutorial CI/CD Docker Jenkins Kubernetes ](/ressources/design.png)
 
 # Tutorial-Kubernetes-jenkins-docker-vps
 
