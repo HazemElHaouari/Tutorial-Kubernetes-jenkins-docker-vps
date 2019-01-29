@@ -136,6 +136,7 @@ install java 8
 `apt install openjdk-8-jre-headless`
 
 Add packages of jenkins and install it
+
 `wget -q -O - https://pkg.jenkins.io/debian/jenkins-ci.org.key | sudo apt-key add -`
 
 `echo deb https://pkg.jenkins.io/debian-stable binary/ | sudo tee /etc/apt/sources.list.d/jenkins.list`
@@ -157,6 +158,7 @@ Now open the url: server-ip:8080
 #### Configure jenkins
 
 copy token to login
+
 `sudo cat /var/lib/jenkins/secrets/initialAdminPassword`
 
 than choose instal suggested plugins
