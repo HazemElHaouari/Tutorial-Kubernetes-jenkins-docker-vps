@@ -66,6 +66,7 @@ From local machine run
 - on the master:
 
 `sudo sysctl net.bridge.bridge-nf-call-iptables=1`
+
 Or you can do this:
 `sudo nano /etc/sysctl.conf` And than copy this at the end: `net.bridge.bridge-nf-call-iptables=1`
 
