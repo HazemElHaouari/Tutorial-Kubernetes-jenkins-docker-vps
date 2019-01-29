@@ -1,6 +1,6 @@
+![Tutorial CI/CD](https://github.com/HazemElHaouari/Tutorial-Kubernetes-jenkins-docker-vps/tree/master/ressources/1280px-Kubernetes_logo.svg.png )
+
 # Tutorial-Kubernetes-jenkins-docker-vps
-
-
 
 This is a tutorial to automatise deployement of applications on VPS ubuntu 16.04 using Jenkins, Docker and Kubernetes.
 
@@ -304,13 +304,14 @@ You will see your app.
 
 # References
 This work is done thanks to this:
-https://medium.com/@smijar/installing-kubernetes-all-in-one-on-a-low-resource-vps-1c89dd5f0096
-https://hostadvice.com/how-to/how-to-set-up-kubernetes-in-ubuntu/
-https://www.digitalocean.com/community/tutorials/how-to-install-jenkins-on-ubuntu-16-04
-https://jenkins.io/doc/book/pipeline/
-https://kubernetes.io/docs/tasks/run-application/run-stateless-application-deployment/
-https://github.com/kubernetes/dashboard
-https://github.com/HoussemDellai/angular-app-kubernetes
+
+- https://medium.com/@smijar/installing-kubernetes-all-in-one-on-a-low-resource-vps-1c89dd5f0096
+- https://hostadvice.com/how-to/how-to-set-up-kubernetes-in-ubuntu/
+- https://www.digitalocean.com/community/tutorials/how-to-install-jenkins-on-ubuntu-16-04
+- https://jenkins.io/doc/book/pipeline/
+- https://kubernetes.io/docs/tasks/run-application/run-stateless-application-deployment/
+- https://github.com/kubernetes/dashboard
+- https://github.com/HoussemDellai/angular-app-kubernetes
 
       
 
