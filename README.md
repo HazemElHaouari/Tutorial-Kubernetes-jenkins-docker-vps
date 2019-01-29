@@ -276,11 +276,7 @@ node {
     }
 	
 	stage('Deploy') {
-		/*kubectl --insecure-skip-tls-verify=true --user="kube-user" --server="https://kubemaster.example.com"  --token=$ACCESS_TOKEN set image deployment/my-deployment mycontainer=myimage:"$BUILD_NUMBER-$SHORT_GIT_COMMIT" */
-        /* sh "kubectl --user="kubernetes-admin" --server="https://144.217.12.186:6443"  --token="qjtv97.5ms54vdx2gjo68jh" set image deployment/angular-app angular-app=hazemelhaouari/testkube:'latest'" */
-        /* sh 'kubectl --user=kubernetes-admin --token=qjtv97.5ms54vdx2gjo68jh  get pods' */
-        sh 'kubectl set image deployment/angular-app angular-app=hazem/testkube:"$BUILD_NUMBER"'
-        
+        sh 'kubectl set image deployment/angular-app angular-app=hazem/testkube:"$BUILD_NUMBER"'   
     }
 }
 ```
@@ -301,7 +297,20 @@ you can add this code before stage deploy if you use docker hub
  
  Now commit changes of your application to github than crate a pipeline from jenkins dashboard.
  To be easy use blue ocean from this url your-server-ip:8080/blue
+After the jod complete, to get your app port run : `kubectl get services` and then copy the NodePort of Http.
+Now Open your-server-ip:your-app-nodeport
+You will see your app.
 
+
+# References
+This work is done thanks to this:
+https://medium.com/@smijar/installing-kubernetes-all-in-one-on-a-low-resource-vps-1c89dd5f0096
+https://hostadvice.com/how-to/how-to-set-up-kubernetes-in-ubuntu/
+https://www.digitalocean.com/community/tutorials/how-to-install-jenkins-on-ubuntu-16-04
+https://jenkins.io/doc/book/pipeline/
+https://kubernetes.io/docs/tasks/run-application/run-stateless-application-deployment/
+https://github.com/kubernetes/dashboard
+https://github.com/HoussemDellai/angular-app-kubernetes
 
       
 
