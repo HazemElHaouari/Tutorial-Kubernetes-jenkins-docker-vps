@@ -313,6 +313,8 @@ Now Open `your-server-ip:your-app-nodeport`
 
 You will see your app.
 
+Finally, to finish by automation, you can add a webhook on your github repo to run a job automatically when there is a new 'push' or 'pull request' .
+
 
 # References
 This work is done thanks to this:
