@@ -170,13 +170,17 @@ Click start using jenkins
 #### Configuring docker for jenkins
 
 `sudo groupadd docker`
+
 `sudo usermod -aG docker jenkins`
+
 `sudo chmod 777 /var/run/docker.sock`
 
 #### Configure jenkins to access to Kubernetes
 
 `mkdir /var/lib/jenkins/.kube/`
+
 `sudo cp -i /etc/kubernetes/admin.conf /var/lib/jenkins/.kube/config`
+
 `sudo chmod 777 /var/lib/jenkins/.kube/config`
 
 Now on jenkins dashboard click "Manage Jenkins" than click "Manage Plugins" On availabe search "Blue Ocean" and install it to facilitate pipelines
@@ -242,6 +246,7 @@ spec:
 Ps: "imagePullPolicy:Never" at the end indicates that the cluster will never pull image from docker. We put it because we will push image from local build. But if you use docker hub, don't put it or put "imagePullPolicy:Always"
 
 To deploy this application on kubernetes cluster, we run and don't forgot to change "applicationRoot" by your application path:
+
 `kubectl apply -f applicationRoot/deploy.yaml`
 
 If you run `kubectl get pods` you will see that the application deployed but doesn't work because actually there is no image in the master machine.
@@ -285,6 +290,7 @@ node {
 ```
 
 you can add this code before stage deploy if you use docker hub
+
 ```
 	stage('Push image') {
          *Finally, we'll push the image with two tags:
