@@ -1,8 +1,8 @@
 ![Tutorial CI/CD Docker Jenkins Kubernetes ](/ressources/design.png)
 
-# Tutorial-Kubernetes-jenkins-docker-Ubuntu16.04
+# Tutorial-DevOps-Kubernetes-jenkins-docker-Ubuntu16.04
 
-This is a tutorial to automatise deployement of applications on VPS ubuntu 16.04 using Jenkins, Docker and Kubernetes.
+This is a tutorial for DevOps to automatise deployment of applications on VPS ubuntu 16.04 using Jenkins, Docker and Kubernetes.
 
 ## Kubernetes
 
