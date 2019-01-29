@@ -305,9 +305,12 @@ you can add this code before stage deploy if you use docker hub
  ```
  
  Now commit changes of your application to github than crate a pipeline from jenkins dashboard.
- To be easy use blue ocean from this url your-server-ip:8080/blue
+ To be easy use blue ocean from this url: `your-server-ip:8080/blue`
+ 
 After the jod complete, to get your app port run : `kubectl get services` and then copy the NodePort of Http.
-Now Open your-server-ip:your-app-nodeport
+
+Now Open `your-server-ip:your-app-nodeport`
+
 You will see your app.
 
 
