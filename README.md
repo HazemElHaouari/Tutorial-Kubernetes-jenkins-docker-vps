@@ -52,9 +52,11 @@ If you have NumCpu error run this command: `kubeadm init --ignore-preflight-erro
 install kubectl on your local machine https://kubernetes.io/docs/tasks/tools/install-kubectl/
 
 In your local machine if you didn't create a directory /.kube for kubectl configaration run this command:
+
 `mkdir -p $HOME/.kube`
 
 Now copy the config from the master to your local machine kubernetes configuration:
+
 `scp root@your-master-ip-here:/etc/kubernetes/admin.conf $HOME/.kube/config`
 
 ##### Tainting the master
