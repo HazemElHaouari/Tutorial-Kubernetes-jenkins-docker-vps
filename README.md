@@ -45,7 +45,7 @@ This is how to configure kubernetes step by step
 
 `kubeadm init`
 
-If you have NumCpu error run this command: `kubeadm init --ignore-preflight-errors=NumCP`
+If you have NumCpu error run this command: `kubeadm init --ignore-preflight-errors=NumCPU`
 
 #### Kubectl configuration on local machine
 
@@ -222,7 +222,7 @@ spec:
     name: https
   selector:
     run: angular-app
-
+---
 apiVersion: extensions/v1beta1
 kind: Deployment
 metadata:
